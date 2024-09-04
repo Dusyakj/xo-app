@@ -4,7 +4,7 @@
   <div>
     <div v-for="game in games.value" :key="game._id">
       Игрок : {{ game.name }} Рейтинговая игра {{ game.isRating }}
-      <el-button @click="acceptGame(game._id, game.name, game.id)">Присоединиться к игре</el-button>
+      <el-button v-if="game.id != store.getPersonId" @click="acceptGame(game._id, game.name, game.id)">Присоединиться к игре</el-button>
     </div>
   </div>
 </template>

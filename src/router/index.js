@@ -56,7 +56,7 @@ const router = createRouter({
           name: 'game',
           component: () => import('../views/GameView.vue'),
           meta: {
-            title: 'Поиск игры'
+            title: 'XO'
           }
         }
       ]
