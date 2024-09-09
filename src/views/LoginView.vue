@@ -20,7 +20,6 @@ import { usePersonStore } from '../stores/PersonStore'
 
 const router = useRouter()
 const store = usePersonStore()
-console.log(process.env.BACK_URL)
 const login = ref('')
 const password = ref('')
 
